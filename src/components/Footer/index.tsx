@@ -1,7 +1,7 @@
-import { FaDiscord } from "react-icons/fa";
-import { BsInstagram } from "react-icons/bs";
-import { BsTwitter } from "react-icons/bs";
-import { SocialLink } from "../SocialLink";
+import { FaDiscord } from 'react-icons/fa'
+import { BsInstagram } from 'react-icons/bs'
+import { BsTwitter } from 'react-icons/bs'
+import { SocialLink } from '../SocialLink'
 
 export const Footer = () => {
     return (
