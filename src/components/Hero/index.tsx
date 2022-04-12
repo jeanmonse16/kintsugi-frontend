@@ -1,4 +1,4 @@
-import Coming from '../../assets/images/coming.png'
+import Coming from '../../assets/images/coming-soon.png'
 
 export const Hero = () => {
     return (
