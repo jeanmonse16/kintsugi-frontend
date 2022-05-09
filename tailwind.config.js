@@ -9,7 +9,7 @@ module.exports = {
           },
         extend: {
             animation: {
-                'slide-desktop': 'slideBig 150s linear infinite',
+                'slide-desktop': 'slideBig 25s linear infinite',
                 'slide-mobile': 'slideSmall 100s linear infinite',
             },
             keyframes: {

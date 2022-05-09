@@ -1,7 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
 import { useIntersectionObserver } from '../../../Hooks/useIntersectionObserver'
-import SeparatorMobile from '../../../assets/images/separator-mobile.png'
-import SeparatorDesktop from '../../../assets/images/separator-desktop.png'
 
 export const Separator = () => {
     const [ matches, setMatches ] = useState(
@@ -29,12 +27,12 @@ export const Separator = () => {
                                 matches ? 
                                     (
                                         <div className='relative bg-[url("/src/assets/images/separator-mobile-bars.png")] bg-contain animate-slide-mobile'>
-                                            <img className='w-full' src={SeparatorMobile} />
+                                            <img className='w-full' src={`${__ASSETS_URL__}separator-mobile.png`} />
                                         </div>
                                     )
                                 :  (
                                         <div className='relative bg-[url("/src/assets/images/separator-desktop-bars.png")] bg-contain animate-slide-desktop'>
-                                            <img className='w-full' src={SeparatorDesktop} />
+                                            <img className='w-full' src={`${__ASSETS_URL__}separator-desktop.png`} />
                                         </div>
                                     )
                             }

@@ -1,6 +1,5 @@
 import { useEffect, useRef } from 'react'
 import { useIntersectionObserver } from "../../../Hooks/useIntersectionObserver"
-import City from '../../../assets/images/city.png'
 
 export const History = () => {
     const ref = useRef(null)
@@ -25,7 +24,7 @@ export const History = () => {
                                     <p className='animate__animated animate__fadeInUp text-lg' style={{ animationDelay: '0.50s' }}>Kinkuni is a city with a humble Japanese culture, where the whole plot happens. Everyone looks happy and complies with the rules.</p>
                                 </div>
                                 <picture className='flex-1 md:order-first'>
-                                    <img className='mx-auto animate__animated animate__fadeInUp' style={{ animationDelay: '0.75s' }} src={City} />
+                                    <img className='mx-auto animate__animated animate__fadeInUp' style={{ animationDelay: '0.75s' }} src={`${__ASSETS_URL__}city.png`} />
                                 </picture>
                             </div>
                         </div>

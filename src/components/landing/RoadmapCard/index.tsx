@@ -1,7 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
 import { useIntersectionObserver } from "../../../Hooks/useIntersectionObserver"
-import RoadmapBorder from '../../../assets/images/roadmap-border.png'
-import RoadmapBorderMobile from '../../../assets/images/roadmap-border-mobile.png'
 
 export const RoadmapCard = ({ children, title }) => {
     const [ matches, setMatches ] = useState(
@@ -27,8 +25,8 @@ export const RoadmapCard = ({ children, title }) => {
                 <span className='text-[#ffdc3a] uppercase font-[Audiowide] font-bold'>{ title }</span>
             </div>  
             {
-                matches ? <img className='w-full max-w-[425px]' src={RoadmapBorder} /> :
-                (<img className='w-full h-full max-w-[425px]' src={RoadmapBorderMobile} />)
+                matches ? <img className='w-full max-w-[425px]' src={`${__ASSETS_URL__}roadmap-border.png`} /> :
+                (<img className='w-full h-full max-w-[425px]' src={`${__ASSETS_URL__}roadmap-border-mobile.png`} />)
 
             }
             <article className='absolute top-0 flex flex-col justify-center items-center h-full w-full px-8 text-sm xs:text-base text-left '>
