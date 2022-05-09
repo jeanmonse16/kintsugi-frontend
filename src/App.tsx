@@ -1,8 +1,9 @@
 import { ComingSoon } from './pages/ComingSoon'
+import { Landing } from './pages/Landing'
 
 const App = () => { 
     return (
-        <ComingSoon />
+        <Landing />
     )
 }
 

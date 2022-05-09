@@ -1,5 +1,29 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
     content: ['./index.html', './src/**/*.{js,jsx,ts,tsx}'],
+    theme: {
+        screens: {
+            'xs': '425px',
+            ...defaultTheme.screens,
+          },
+        extend: {
+            animation: {
+                'slide-desktop': 'slideBig 150s linear infinite',
+                'slide-mobile': 'slideSmall 100s linear infinite',
+            },
+            keyframes: {
+                slideBig: {
+                  '0%': { backgroundPosition: '0px' },
+                  '100%': { backgroundPosition: '1580px' },
+                }, 
+                slideSmall: {
+                    '0%': { backgroundPosition: '0px' },
+                    '100%': { backgroundPosition: '667px' },
+                  }
+              }
+        }
+    },
     // to customize if you want to theme: {
     //   screens: {
     //     sm: '480px',

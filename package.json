@@ -9,6 +9,7 @@
     "buildStyles": "npx tailwindcss -i ./src/tailwind.css -o ./dist/tailwind.css"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-icons": "^4.3.1",

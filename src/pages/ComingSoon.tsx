@@ -1,18 +1,8 @@
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import { Header } from "../components/Header"
-import { Hero } from "../components/Hero"
-import { Footer } from "../components/Footer"
-
-// export const ComingSoon = () => {
-//     return (
-//         <div className="h-screen grid grid-rows-[min-content_1fr_min-content] gap-4">
-//             <Header />
-//             <Hero />
-//             <Footer />
-//         </div>
-//     )
-// }
+import { Header } from "../components/comingSoon/Header"
+import { Hero } from "../components/comingSoon/Hero"
+import { Footer } from "../components/comingSoon/Footer"
 
 export const ComingSoon = () => {
     const options = {

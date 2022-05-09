@@ -1,5 +1,5 @@
-import Logo  from '../../assets/images/logo.jpeg'
-import Letter from '../../assets/images/logo-letters.png'
+import Logo  from '../../../assets/images/logo.jpeg'
+import Letter from '../../../assets/images/logo-letters.png'
 
 export const Header = () => {
     return (
