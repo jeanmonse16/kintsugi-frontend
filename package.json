@@ -3,10 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite --host",
-    "build": "tsc && vite build",
+    "dev": "vite --host -m development",
+    "build": "tsc && vite build -m production",
     "preview": "vite preview",
-    "buildStyles": "npx tailwindcss -i ./src/tailwind.css -o ./dist/tailwind.css"
+    "buildStyles": "npx tailwindcss -i ./src/tailwind.css -o ./dist/tailwind.css --minify"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
