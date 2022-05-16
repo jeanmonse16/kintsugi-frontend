@@ -5,7 +5,8 @@ import { SocialLink } from '../../SocialLink'
 
 export const Footer = () => {
     return (
-        <footer className="p-4 flex flex-col items-center text-white">
+        <div className="container mx-auto text-center">
+            <img className='w-60 mx-auto mb-6' src={` ${__ASSETS_URL__}logo-letters.png`} />
             <div className="flex justify-center mb-4">
                 <SocialLink 
                     link="https://instagram.com/kintsuginft?utm_medium=copy_link"
@@ -20,7 +21,7 @@ export const Footer = () => {
                     icon={() => <FaDiscord />}
                 />
             </div>
-            <p className="text-xs">Copyright © 2022 Kintsugi NFTs</p>
-        </footer>
+            <p className="text-xs text-white mb-4">Copyright © 2022 Kintsugi NFTs</p>
+        </div>
     )
 }

@@ -12,7 +12,7 @@ export const About = () => {
     }, [])
 
     return (
-        <div ref={ref} className="container mx-auto  min-h-[200px] flex flex-col p-4 items-center text-white text-center">
+        <div ref={ref} className="container mx-auto min-h-[200px] flex flex-col p-4 md:p-0 items-center text-white text-center">
             {
                 isVisible && (
                     <>

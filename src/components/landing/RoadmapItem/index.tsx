@@ -8,10 +8,6 @@ export const RoadmapItem = ({ title, content, last = null }) => {
         threshold: 0.8
     })
 
-    if (isVisible) {
-        console.log('se ve')
-    }
-
     useEffect(() => {
         setObserver(ref.current)
     }, [])
