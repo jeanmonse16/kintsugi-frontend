@@ -12,8 +12,6 @@ export const TeamCard = ({ image, name, ocupation, link }) => {
         setObserver(ref.current)
     }, [])
 
-    console.log('xd')
-
     return (
         <div ref={ref} className="min-w-full h-[324px] sm:min-w-[50%] lg:min-w-[25%] xl:min-w-[20%] flex flex-col items-center mx-auto snap-center overflow-x-hidden scrollbar-hide">
             {

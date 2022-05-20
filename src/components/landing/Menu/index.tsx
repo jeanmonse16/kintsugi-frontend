@@ -1,5 +1,4 @@
 export const Menu = ({ children, toggleMenu }) => {
-    console.log(toggleMenu)
     
     return (
         <nav className={`absolute right-0 top-0 h-full lg:h-fit text-black z-10 animate__animated animate__faster ${toggleMenu ? 'animate__fadeInRight' : 'animate__fadeOutRight'}`}>

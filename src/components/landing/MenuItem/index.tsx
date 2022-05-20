@@ -16,8 +16,7 @@ export const MenuItem = ({ title, active = null }) => {
                     ? <BsCaretRightFill className='mr-4'/> 
                     : <BsCaretRight className='mr-4'/> 
             }
-            
-            { title }
+            <a href={`#${title}`}>{ title }</a>
         </li>
     )
 }

@@ -24,12 +24,11 @@ export const Header = () => {
                 toggleMenu !== null &&
                     (
                         <Menu toggleMenu={toggleMenu}>
-                            <MenuItem title='Home' active />
+                            <MenuItem title='Home' />
                             <MenuItem title='About' />
                             <MenuItem title='History' />
-                            <MenuItem title='Rarity' />
                             <MenuItem title='Roadmap' />
-                            <MenuItem title='Mindmap' />
+                            <MenuItem title='Rarity' />
                             <MenuItem title='Team' />
                         </Menu>
                     )

@@ -13,7 +13,7 @@ export const Rarity = () => {
     }, [])
 
     return (
-        <div className="container mx-auto">
+        <div id='Rarity' className="container mx-auto">
             <h2 ref={ref} className={`${isVisible ? 'visible animate__animated animate__fadeInUp' : 'invisible'} mb-8 text-3xl md:text-4xl font-[Audiowide] uppercase text-white text-center`}><span className="text-[#ffdc3a]">kintsugi</span> rarity</h2>
             <div className="grid grid-cols-[auto_min-content] gap-x-4 gap-y-8 md:gap-y-16 md:gap-x-8 md:grid-rows-[min-content] md:grid-cols-[auto_min-content_auto_min-content] lg:grid-cols-4 p-4">
                 <RarityItem 

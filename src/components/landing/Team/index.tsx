@@ -50,7 +50,7 @@ export const Team = () => {
     }
 
     return (
-        <div ref={ref} className="container mx-auto p-4">
+        <div id='Team' ref={ref} className="container mx-auto p-4">
             <h2 className={`${isVisible ? 'visible animate__animated animate__fadeInUp' : 'invisible'} mb-8 text-3xl md:text-4xl font-[Audiowide] uppercase text-white text-center `}><span className="text-[#ffdc3a]">kintsugi</span> Team</h2>
             <div className={`${isVisible ? 'visible animate__animated animate__fadeIn' : 'invisible'} flex items-center `}>
                 <button className={scroll.current === 0 ? 'opacity-25' : ''} disabled={ scroll.current === 0 && true } onClick={() => handleOnClick('left')}>

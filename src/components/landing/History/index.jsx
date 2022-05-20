@@ -4,7 +4,7 @@ import { useIntersectionObserver } from "../../../Hooks/useIntersectionObserver"
 export const History = () => {
     const ref = useRef(null)
     const [ isVisible, setObserver ] = useIntersectionObserver({
-        threshold: 0.8
+        threshold: 0.4
     })
 
     useEffect(() => {
@@ -12,26 +12,20 @@ export const History = () => {
     }, [])
 
     return (
-        <div ref={ref} className="container mx-auto min-h-[200px] p-4">
-            {
-                isVisible && 
-                    (   
-                        <div className='mx-auto text-center text-white'>
-                            <div className='flex flex-col md:flex-row gap-8 p-4 md:p-0'>
-                                <div className='flex flex-col justify-center flex-1 text-center md:order-last'>
-                                    <h2 className='animate__animated animate__fadeInUp mb-8 text-3xl md:text-4xl font-[Audiowide] uppercase'><span className="text-[#ffdc3a]">kintsugi</span> City</h2>
-                                    <h3 className='animate__animated animate__fadeInUp mb-2 text-xl md:text-2xl font-[Audiowide] uppercase' style={{ animationDelay: '0.25s' }}><span className='text-[#ffdc3a]'>-</span> Kinkuni City <span className='text-[#ffdc3a]'>-</span></h3>
-                                    <p className='animate__animated animate__fadeInUp text-lg' style={{ animationDelay: '0.50s' }}>Kinkuni is a city with a humble Japanese culture, where the whole plot happens. They are ruled by an authoritarian government Which everybody seems to be happy with.</p>
-                                    <p className='animate__animated animate__fadeInUp text-lg' style={{ animationDelay: '0.75s' }}>However, there is a group of people who won't settle for this lifestyle they are called the resistance.</p>
-                                </div>
-                                <picture className='flex-1 md:order-first'>
-                                    <img className='mx-auto animate__animated animate__fadeInUp' style={{ animationDelay: '0.75s' }} src={`${__ASSETS_URL__}city.png`} />
-                                </picture>
-                            </div>
-                        </div>
-                    )
-            }
-
+        <div id='History' ref={ref} className="container mx-auto p-4">
+            <div className='mx-auto text-center text-white'>
+                <div className='flex flex-col md:flex-row gap-8 p-4 md:p-0'>
+                    <div className='flex flex-col justify-center flex-1 text-center md:order-last'>
+                        <h2 className={`${isVisible ? 'visible animate__animated animate__fadeInUp' : 'invisible'} mb-8 text-3xl md:text-4xl font-[Audiowide] uppercase `}><span className="text-[#ffdc3a]">kintsugi</span> City</h2>
+                        <h3 className={`${isVisible ? 'visible animate__animated animate__fadeInUp' : 'invisible'} mb-2 text-xl md:text-2xl font-[Audiowide] uppercase `} style={{ animationDelay: '0.25s' }}><span className='text-[#ffdc3a]'>-</span> Kinkuni City <span className='text-[#ffdc3a]'>-</span></h3>
+                        <p className={`${isVisible ? 'visible animate__animated animate__fadeInUp' : 'invisible'} text-lg `} style={{ animationDelay: '0.50s' }}>Kinkuni is a city with a humble Japanese culture, where the whole plot happens. They are ruled by an authoritarian government Which everybody seems to be happy with.</p>
+                        <p className={`${isVisible ? 'visible animate__animated animate__fadeInUp' : 'invisible'} text-lg `} style={{ animationDelay: '0.75s' }}>However, there is a group of people who won't settle for this lifestyle they are called the resistance.</p>
+                    </div>
+                    <picture className='flex-1 md:order-first'>
+                        <img className={`${isVisible ? 'visible animate__animated animate__fadeInUp' : 'invisible'} mx-auto `} style={{ animationDelay: '0.75s' }} src={`${__ASSETS_URL__}city.png`} />
+                    </picture>
+                </div>
+            </div>
         </div>
     )
 }
