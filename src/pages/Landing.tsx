@@ -10,7 +10,7 @@ import { Footer } from '../components/landing/Footer'
 export const Landing = () => {
 
     return (
-        <div className="grid grid-rows-[100vh] gap-16">
+        <div className="grid grid-rows-[100vh] gap-16 bg-[url('/src/assets/images/kintsugi-bg.png')] bg-contain animate-slide-bg">
             <Home />
             <Separator />
             <About />

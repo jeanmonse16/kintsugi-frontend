@@ -10,6 +10,7 @@ module.exports = {
           },
         extend: {
             animation: {
+                'slide-bg': 'slideBoth 600s linear infinite',
                 'slide-desktop': 'slideBig 150s linear infinite',
                 'slide-mobile': 'slideSmall 100s linear infinite',
                 'grow-width': 'growFull 0.75s ease-out',
@@ -17,6 +18,10 @@ module.exports = {
                 'move-right': 'moveRight 0.75s ease',
             },
             keyframes: {
+                slideBoth: {
+                  '0%': { backgroundPosition: '0px' },
+                  '100%': { backgroundPosition: '3840px 6480px' },
+                }, 
                 slideBig: {
                   '0%': { backgroundPosition: '0px' },
                   '100%': { backgroundPosition: '1580px' },
