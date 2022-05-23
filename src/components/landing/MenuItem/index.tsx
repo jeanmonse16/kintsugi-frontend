@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { BsCaretRight } from 'react-icons/bs'
 import { BsCaretRightFill } from 'react-icons/bs'
 
-export const MenuItem = ({ title, active = null }) => {
+export const MenuItem = ({ title, active = null, onClick }) => {
     const [ isHover, setIsHover ] = useState(false)
 
     const handleIsHover = () => {
@@ -16,7 +16,7 @@ export const MenuItem = ({ title, active = null }) => {
                     ? <BsCaretRightFill className='mr-4'/> 
                     : <BsCaretRight className='mr-4'/> 
             }
-            <a href={`#${title}`}>{ title }</a>
+            <a href={`#${title}`} onClick={onClick}>{ title }</a>
         </li>
     )
 }
