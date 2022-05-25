@@ -37,7 +37,7 @@ export const Header = () => {
                             <MenuItem title='About' onClick={() => handleOnClick('About') } active={isActive === 'About' ? true : false} />
                             <MenuItem title='History' onClick={() => handleOnClick('History') } active={isActive === 'History' ? true : false} />
                             <MenuItem title='Roadmap' onClick={() => handleOnClick('Roadmap') } active={isActive === 'Roadmap' ? true : false} />
-                            <MenuItem title='Rarity' onClick={() => handleOnClick('Rarity') } active={isActive === 'Rarity' ? true : false} />
+                            <MenuItem title='Characters' onClick={() => handleOnClick('Characters') } active={isActive === 'Characters' ? true : false} />
                             <MenuItem title='Team' onClick={() => handleOnClick('Team') } active={isActive === 'Team' ? true : false} />
                         </Menu>
                     )

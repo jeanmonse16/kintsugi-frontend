@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react"
 import { useIntersectionObserver } from "../../../Hooks/useIntersectionObserver"
 
-export const RarityItem = ({ number, name, img, description = null }) => {
+export const CharacterItem = ({ number, name, img, description = null }) => {
     const ref = useRef(null)
     const [ isVisible, setObserver ] = useIntersectionObserver({
         threshold: 1
