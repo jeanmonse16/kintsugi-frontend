@@ -25,8 +25,8 @@ export const Header = () => {
         <header className="w-full p-4 flex justify-end">
             {
                 !toggleMenu 
-                    ? (<FaBars className='relative z-20 text-[#ffdc3a] text-3xl cursor-pointer animate__animated animate__faster animate__rotateIn' onClick={handleToggleMenu} />)
-                    : (<BsXLg className='relative my-[5px] z-20 text-[#ffdc3a] text-xl cursor-pointer animate__animated animate__faster animate__rotateIn' onClick={handleToggleMenu} />)
+                    ? (<FaBars className='relative z-20 text-kintsugi-yellow text-3xl cursor-pointer animate__animated animate__faster animate__rotateIn' onClick={handleToggleMenu} />)
+                    : (<BsXLg className='relative my-[5px] z-20 text-kintsugi-yellow text-xl cursor-pointer animate__animated animate__faster animate__rotateIn' onClick={handleToggleMenu} />)
             }
 
             {

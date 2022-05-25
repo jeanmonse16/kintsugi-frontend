@@ -15,7 +15,7 @@ export const Roadmap = () => {
 
     return (
         <div id='Roadmap' className='container mx-auto'>
-            <h2 ref={ref} className={` ${isVisible ? 'visible animate__animated animate__fadeInUp' : 'invisible'} mb-16 text-3xl md:text-4xl font-[Audiowide] text-center text-white uppercase `}><span className="text-[#ffdc3a]">kintsugi</span> Roadmap</h2>
+            <h2 ref={ref} className={` ${isVisible ? 'visible animate__animated animate__fadeInUp' : 'invisible'} mb-16 text-3xl md:text-4xl font-[Audiowide] text-center text-white uppercase `}><span className="text-kintsugi-yellow">kintsugi</span> Roadmap</h2>
             <div className='flex flex-col gap-12 items-center lg:justify-evenly lg:flex-row p-4 md:p-0 text-white'>
                 <RoadmapCard title='Phase_1'>
                     <RoadmapItem title='Kintsugi commnity' content='First is our community, you are essential for us. We want to give you a space to enjoy, vote and fell privileged.' />

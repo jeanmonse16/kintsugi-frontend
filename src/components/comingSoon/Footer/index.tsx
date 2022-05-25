@@ -5,7 +5,7 @@ import { SocialLink } from '../../SocialLink'
 
 export const Footer = () => {
     return (
-        <footer className="p-4 flex flex-col items-center text-white">
+        <footer className="p-4 flex flex-col items-center text-white animate__animated animate__fadeInUp" style={{ animationDelay: '0.5s' }}>
             <div className="flex justify-center mb-4">
                 <SocialLink 
                     link="https://instagram.com/kintsuginft?utm_medium=copy_link"

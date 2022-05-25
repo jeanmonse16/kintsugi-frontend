@@ -10,7 +10,7 @@ export const MenuItem = ({ title, active = null, onClick }) => {
     }
 
     return (
-        <li className='flex items-center font-["Audiowide"] font-bold text-[#ffdc3a] text-lg uppercase cursor-pointer hover:scale-125 transition-all' onMouseOver={handleIsHover} onMouseOut={handleIsHover}>
+        <li className='flex items-center font-["Audiowide"] font-bold text-kintsugi-yellow text-lg uppercase cursor-pointer hover:scale-125 transition-all' onMouseOver={handleIsHover} onMouseOut={handleIsHover}>
             {
                 active || isHover
                     ? <BsCaretRightFill className='mr-4'/> 

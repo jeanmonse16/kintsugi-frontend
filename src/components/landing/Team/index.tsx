@@ -51,12 +51,12 @@ export const Team = () => {
 
     return (
         <div id='Team' ref={ref} className="container mx-auto p-4">
-            <h2 className={`${isVisible ? 'visible animate__animated animate__fadeInUp' : 'invisible'} mb-8 text-3xl md:text-4xl font-[Audiowide] uppercase text-white text-center `}><span className="text-[#ffdc3a]">kintsugi</span> Team</h2>
+            <h2 className={`${isVisible ? 'visible animate__animated animate__fadeInUp' : 'invisible'} mb-8 text-3xl md:text-4xl font-[Audiowide] uppercase text-white text-center `}><span className="text-kintsugi-yellow">kintsugi</span> Team</h2>
             <div className={`${isVisible ? 'visible animate__animated animate__fadeIn' : 'invisible'} flex items-center `}>
                 <button className={scroll.current === 0 ? 'opacity-25' : ''} disabled={ scroll.current === 0 && true } onClick={() => handleOnClick('left')}>
-                    <BsCaretLeftFill className='text-[#ffdc3a] text-4xl' />
+                    <BsCaretLeftFill className='text-kintsugi-yellow text-4xl' />
                 </button>
-                <div ref={refScroll} className="flex w-full overflow-x-scroll scroll-smooth snap-x sm:snap-none scrollbar-hide border-x-2 border-x-[#ffdc3a]">
+                <div ref={refScroll} className="flex w-full overflow-x-scroll scroll-smooth snap-x sm:snap-none scrollbar-hide border-x-2 border-x-kintsugi-yellow">
                     <TeamCard 
                         image='logo.jpeg'
                         link='#'
@@ -107,7 +107,7 @@ export const Team = () => {
                     />
                 </div>
                 <button className={scroll.current === scroll.max ? 'opacity-25' : ''} disabled={ scroll.current === scroll.max && true } onClick={() => handleOnClick('right')}>
-                    <BsCaretRightFill className='text-[#ffdc3a] text-4xl' />
+                    <BsCaretRightFill className='text-kintsugi-yellow text-4xl' />
                 </button>
             </div>
         </div>

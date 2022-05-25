@@ -26,7 +26,7 @@ export const TeamCard = ({ image, name, ocupation, link }) => {
                         <div className="relative mt-6 text-center">
                             <img className='animate__animated animate__fadeIn animate__slow' src={`${__ASSETS_URL__}team-name-border.png`} />
                             <div className='absolute top-1/2 translate-y-[-50%] left-1/2 translate-x-[-50%] w-fit text-white'>
-                                    <span className='animate__animated animate__fadeInUp text-[#ffdc3a] font-[Audiowide] text-xl uppercase' style={{ animationDelay: '0.25s' }}>{ name }</span>
+                                    <span className='animate__animated animate__fadeInUp text-kintsugi-yellow font-[Audiowide] text-xl uppercase' style={{ animationDelay: '0.25s' }}>{ name }</span>
                                     <p className='animate__animated animate__fadeInUp font-[Audiowide] uppercase' style={{ animationDelay: '0.50s' }}>{ ocupation }</p>
                                     <a className='animate__animated animate__fadeInUp' style={{ animationDelay: '0.75s' }} href={link}>
                                         <FaTwitter className="text-xl mt-2 mx-auto" />
